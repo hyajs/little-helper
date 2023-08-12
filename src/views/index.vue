@@ -1,11 +1,10 @@
 <template>
   <div class="layout">
     <div class="header"><base-header></base-header></div>
-
     <div class="content">
       <div class="menu"><base-menu></base-menu></div>
       <div class="body">
-        <!-- 内容 -->
+        <router-view></router-view>
       </div>
     </div>
   </div>
@@ -33,10 +32,6 @@
   flex: 1;
 }
 
-.menu {
-  width: 200px;
-  background-color: #f2f2f2;
-}
 
 .body {
   flex: 1;

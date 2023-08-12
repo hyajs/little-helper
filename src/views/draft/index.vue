@@ -1,4 +1,6 @@
-<template>dwa</template>
+<template>
+    ddwadwwa
+</template>
 
 <script>
 export default {};
