@@ -22,16 +22,13 @@
 
 .header {
   height: 100px;
-  background-color: #333;
   width: 100%;
-  color: white;
 }
 
 .content {
   display: flex;
   flex: 1;
 }
-
 
 .body {
   flex: 1;
