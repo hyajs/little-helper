@@ -16,9 +16,41 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "/draft",
         name: "Draft",
-        component: () => import("@/views/draft/index.vue"),
+        component: () => import("@/views/DraftPhase/index.vue"),
         meta: {
           title: "草稿箱",
+        },
+      },
+      {
+        path: "/plan",
+        name: "Plan",
+        component: () => import("@/views/PlanPhase/index.vue"),
+        meta: {
+          title: "计划项目",
+        },
+      },
+      {
+        path: "/do",
+        name: "do",
+        component: () => import("@/views/DoPhase/index.vue"),
+        meta: {
+          title: "行动项目",
+        },
+      },
+      {
+        path: "/check",
+        name: "Check",
+        component: () => import("@/views/CheckPhase/index.vue"),
+        meta: {
+          title: "检查项目",
+        },
+      },
+      {
+        path: "/act",
+        name: "Act",
+        component: () => import("@/views/ActPhase/index.vue"),
+        meta: {
+          title: "行动项目",
         },
       },
     ],
