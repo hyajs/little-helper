@@ -11,7 +11,7 @@
     </el-col>
     <el-col :span="8" :offset="8">
       <div class="flex justify-between">
-        <el-image lazy src="../../public/little-helper.png" class="w-10 h-10">
+        <el-image lazy src="/little-helper.png" class="w-10 h-10">
           <template #error>
             <div class="image-slot">
               <i-material-symbols-person></i-material-symbols-person>
