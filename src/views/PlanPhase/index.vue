@@ -57,7 +57,9 @@
             </template>
           </el-popconfirm>
 
-          <el-button type="primary" @click="handleEdit">升级</el-button>
+          <el-button type="primary" @click="handleEdit(scope.row)"
+            >升级</el-button
+          >
         </div>
       </template>
     </el-table-column>

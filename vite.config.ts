@@ -6,8 +6,8 @@ import Components from "unplugin-vue-components/vite";
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 import { VueUseComponentsResolver } from "unplugin-vue-components/resolvers";
 import UnoCSS from "unocss/vite";
-import Icons from 'unplugin-icons/vite'
-import IconsResolver from 'unplugin-icons/resolver'
+import Icons from "unplugin-icons/vite";
+import IconsResolver from "unplugin-icons/resolver";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -26,13 +26,17 @@ export default defineConfig({
       },
     }),
     Components({
-      resolvers: [ElementPlusResolver(), VueUseComponentsResolver(), IconsResolver()],
+      resolvers: [
+        ElementPlusResolver(),
+        VueUseComponentsResolver(),
+        IconsResolver(),
+      ],
       dts: "./src/components.d.ts",
       // imports 指定组件所在位置，默认为 src/components
       dirs: ["src/components/"],
     }),
     Icons({
-      compiler: 'vue3',
+      compiler: "vue3",
       autoInstall: true,
     }),
   ],

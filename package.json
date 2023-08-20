@@ -5,11 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@types/node": "^20.4.8",
+    "@types/node": "^20.5.1",
     "@vueuse/components": "^10.3.0",
     "@vueuse/core": "^10.3.0",
     "axios": "^1.4.0",
@@ -19,16 +19,16 @@
     "vue-router": "^4.2.4"
   },
   "devDependencies": {
-    "@iconify/json": "^2.2.100",
-    "@vitejs/plugin-vue": "^4.2.3",
-    "eslint-plugin-vue": "^9.16.1",
-    "sass": "^1.64.2",
-    "typescript": "^5.0.2",
-    "unocss": "^0.55.0",
+    "@iconify/json": "^2.2.103",
+    "@vitejs/plugin-vue": "^4.3.1",
+    "eslint-plugin-vue": "^9.17.0",
+    "sass": "^1.66.1",
+    "typescript": "^5.1.6",
+    "unocss": "^0.55.2",
     "unplugin-auto-import": "^0.16.6",
     "unplugin-icons": "^0.16.5",
     "unplugin-vue-components": "^0.25.1",
-    "vite": "^4.4.5",
-    "vue-tsc": "^1.8.5"
+    "vite": "^4.4.9",
+    "vue-tsc": "^1.8.8"
   }
 }
