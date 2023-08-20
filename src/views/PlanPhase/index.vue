@@ -57,18 +57,29 @@
             </template>
           </el-popconfirm>
 
-          <el-popconfirm title="该项目将为被升级，进行任务分配">
-            <template #reference>
-              <el-button type="primary">升级</el-button>
-            </template>
-          </el-popconfirm>
+          <el-button type="primary" @click="handleEdit">升级</el-button>
         </div>
       </template>
     </el-table-column>
   </el-table>
+  <plan-data-edit
+    v-model:visible="viewState.editDialog.visible"
+    @close="closeEdit"
+  ></plan-data-edit>
 </template>
 
 <script lang="ts" setup>
+import PlanDataEdit from "./PlanDataEdit.vue";
+const viewState = reactive({
+  editDialog: { visible: false },
+});
+
+function handleEdit(id: string) {
+  viewState.editDialog.visible = true;
+}
+function closeEdit(val: any) {
+  viewState.editDialog.visible = false;
+}
 const tableData = [
   {
     information_source: "MES",
